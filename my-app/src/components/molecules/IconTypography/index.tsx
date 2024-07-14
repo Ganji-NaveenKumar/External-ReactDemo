@@ -1,34 +1,24 @@
 import React from "react";
-import TypographyComp from "../../atoms/Typography";
-import IconComp from "../../atoms/Icon";
-import { iconsData } from "../Card/data";
+import Typography from "../../atoms/Typography";
+import IconComp from "../IconsComp";
 import styled from "@emotion/styled";
+import { Box } from "@mui/material";
 
-const StyledIcon = styled.div`
-  #Icons {
-    display: flex;
-    gap: 20px;
-    margin-top: 10px;
-  }
+const MainDiv = styled.div`
+  display: flex;
 `;
+
 const IconTypography: React.FC = () => {
   return (
-    <div>
-      <TypographyComp>Commute routes available :</TypographyComp>
-      <StyledIcon>
-        <div id="Icons">
-          {iconsData.map((icon, index) => (
-            <IconComp
-              key={index}
-              src={icon.src}
-              alt={icon.alt}
-              width="24px"
-              height="24px"
-            />
-          ))}
-        </div>
-      </StyledIcon>
-    </div>
+    <MainDiv>
+      <Box>
+        <Typography>Commute routes available :</Typography>
+        <IconComp />
+      </Box>
+      <Box>
+        <Typography>1 hour ago</Typography>
+      </Box>
+    </MainDiv>
   );
 };
 export default IconTypography;
