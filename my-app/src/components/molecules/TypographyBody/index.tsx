@@ -7,9 +7,9 @@ const StyledTypography = styled.div`
 const TypographyBody: React.FC = () => {
   return (
     <StyledTypography>
-      <Typography>User Experience Designer</Typography>
-      <Typography>HP</Typography>
-      <Typography>Hyderabad, Telangana, India</Typography>
+      <Typography variant="body1">User Experience Designer</Typography>
+      <Typography variant="body1">HP</Typography>
+      <Typography variant="body1">Hyderabad, Telangana, India</Typography>
     </StyledTypography>
   );
 };

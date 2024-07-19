@@ -12,11 +12,11 @@ const IconTypography: React.FC = () => {
   return (
     <MainDiv>
       <Box>
-        <Typography>Commute routes available :</Typography>
+        <Typography variant="body1">Commute routes available :</Typography>
         <IconComp />
       </Box>
       <Box>
-        <Typography>1 hour ago</Typography>
+        <Typography variant="body1">1 hour ago</Typography>
       </Box>
     </MainDiv>
   );

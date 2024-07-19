@@ -8,4 +8,10 @@ const ImagePath={
     More:`${Path}/more.png`,
     MainImage:`${Path}/MainImage.png`
 }
+export const iconsData = [
+    { src: ImagePath.image, alt: 'Image not found' },
+    { src: ImagePath.image1, alt: 'Image not found' },
+    { src: ImagePath.image2, alt: 'Image not found' },
+    { src: ImagePath.image3, alt: 'Image not found' }
+  ];
 export default ImagePath;
