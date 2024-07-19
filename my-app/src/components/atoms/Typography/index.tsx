@@ -3,7 +3,7 @@ import { Typography as MuiTypography } from "@mui/material";
 
 interface TypographyProps {
   children: React.ReactNode;
-  variant:'h1'|'h3'|'body1'
+  variant:'h1'|'h3'|'body1'|'body2'|'subtitle1'
 }
 const Typography: React.FC<TypographyProps> = ({ children,variant }) => {
   return (

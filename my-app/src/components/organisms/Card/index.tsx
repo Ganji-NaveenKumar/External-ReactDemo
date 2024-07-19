@@ -13,9 +13,10 @@ const MainCard = styled.div`
   gap: 20px;
   padding: 20px;
   position: fixed;
-  top: 40%;
-  left: 40%;
+  top: 30%;
+  left: 30%;
   border: 1px solid red;
+  border-radius:15px;
 `;
 const Card: React.FC = () => {
   return (

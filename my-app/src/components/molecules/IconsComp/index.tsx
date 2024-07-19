@@ -2,18 +2,18 @@ import React from "react";
 import Icon from "../../atoms/Icon";
 import styled from "@emotion/styled";
 import { iconsData } from "../../../utils/constants/index";
-const Iconstyled = styled(Icon)`
-  width: 22px;
-  height: 22px;
-  margin-right: 10px;
+const IconCompStyle=styled.div`
+display:flex;
+justify-content:space-between;
+width:144px;
 `;
 const IconComp: React.FC = () => {
   return (
-    <div id="Icons">
+    <IconCompStyle>
       {iconsData.map((icon, index) => (
-        <Iconstyled key={index} src={icon.src} alt={icon.alt}/>
+        <Icon key={index} src={icon.src} alt={icon.alt}/>
       ))}
-    </div>
+    </IconCompStyle>
   );
 };
 export default IconComp;
