@@ -5,7 +5,7 @@ import ItemCard from "../ItemCard";
 import { ThemeProvider } from "@mui/material";
 import themes from "../../../Themes";
 import styled from "@emotion/styled";
-const StyledMoleculeCard = styled.div`
+const StyledMoleculeCard = styled(Box)`
   margin-top: 10%;
   margin-left: 35%;
   width: 397px;
@@ -14,7 +14,7 @@ const StyledMoleculeCard = styled.div`
   border-radius: 4px;
   border: 1px solid #e8e8f7;
 `;
-const TypogrpahyStyled = styled.div`
+const TypogrpahyStyled = styled(Box)`
   width: 398px;
   height: 28px;
   padding: 0px 24px;

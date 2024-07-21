@@ -2,13 +2,14 @@ import React from "react";
 import Icon from "../../atoms/Icon/index";
 import TypographyBody from "../TypographyBody";
 import styled from "@emotion/styled";
+import { Box } from "@mui/material";
 interface IconTypographyProps {
   iconSrc: string;
-  typographyHeader: string;
-  typographyBody: string;
+  title: string;
+  description: string;
   variant?: "body1" | "caption" | "h5" | "subtitle1";
 }
-const StyledDiv = styled.div`
+const StyledDiv = styled(Box)`
   display: flex;
   flex-direction: row;
   width: auto;
@@ -22,15 +23,15 @@ const ImageStyled = styled(Icon)`
 `;
 const IconTypography: React.FC<IconTypographyProps> = ({
   iconSrc,
-  typographyHeader,
-  typographyBody,
+  title,
+  description,
 }) => {
   return (
     <StyledDiv>
       <ImageStyled src={iconSrc} alt="not found image"></ImageStyled>
       <TypographyBody
-        Header={typographyHeader}
-        Body={typographyBody}
+        title={title}
+        description={description}
       ></TypographyBody>
     </StyledDiv>
   );

@@ -1,4 +1,4 @@
-const Path = "/assets";
+const Path = "/assets/Images";
 
 export const ImagePath = {
   BitCoin: `${Path}/BitCoin.svg`,

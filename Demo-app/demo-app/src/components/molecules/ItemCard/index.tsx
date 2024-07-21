@@ -4,7 +4,7 @@ import TypographyBody from "../TypographyBody";
 import IconTypography from "../IconTypography";
 import Data from "../../../utils/constants/data";
 import styled from "@emotion/styled";
-const IconTypoStyle = styled.div`
+const IconTypoStyle = styled(Box)`
   display: flex;
   width: 370px;
   height: 58px;
@@ -13,7 +13,7 @@ const IconTypoStyle = styled.div`
   opacity: 0px;
   box-shadow: 0px 1px 10px 0px #2c2c2c14;
 `;
-const StyledTypography = styled.div`
+const StyledTypography = styled(Box)`
   text-align: right;
 `;
 const ItemCard: React.FC = () => {
@@ -25,15 +25,15 @@ const ItemCard: React.FC = () => {
           <Box>
             <IconTypography
               iconSrc={item.image}
-              typographyHeader={item.Header}
-              typographyBody={item.Body}
+              title={item.Header}
+              description={item.Body}
             ></IconTypography>
           </Box>
           <Box>
             <StyledTypography>
               <TypographyBody
-                Header={item.TotalAmount}
-                Body={item.Percentage}
+                title={item.TotalAmount}
+                description={item.Percentage}
               ></TypographyBody>
             </StyledTypography>
           </Box>

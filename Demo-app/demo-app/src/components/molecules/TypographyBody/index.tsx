@@ -5,21 +5,21 @@ import Typography from "../../atoms/Typography/index";
 import styled from "@emotion/styled";
 import themes from "../../../Themes";
 interface TypographyBodyProps {
-  Header: string;
-  Body: string;
+  title: string;
+  description: string;
 }
 
-const TypographyStyle = styled.div`
+const TypographyStyle = styled(Box)`
   gap: 4px;
   opacity: 0px;
 `;
-const TypographyBody: React.FC<TypographyBodyProps> = ({ Header, Body }) => {
+const TypographyBody: React.FC<TypographyBodyProps> = ({ title, description }) => {
   return (
     <Box>
       <TypographyStyle>
         <ThemeProvider theme={themes}>
-          <Typography variant="body1">{Header}</Typography>
-          <Typography variant="caption">{Body}</Typography>
+          <Typography variant="body1">{title}</Typography>
+          <Typography variant="caption">{description}</Typography>
         </ThemeProvider>
       </TypographyStyle>
     </Box>
