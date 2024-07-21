@@ -2,16 +2,17 @@ import React from "react";
 import Icon from "../../atoms/Icon";
 import styled from "@emotion/styled";
 import ImagePath from "../../../utils/constants";
-const ImageComp = styled.div`
+import { Box } from "@mui/material";
+const ImageComp = styled(Box)`
   display: flex;
   justify-content: space-between;
   width: 100%;
 `;
-const StyledImg=styled.div`
+const StyledImg=styled(Box)`
 width:45px;
 height:45px;
 `;
-const StyledImg1=styled.div`
+const StyledImg1=styled(Box)`
 width:24px;
 height:24px;
 `;

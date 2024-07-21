@@ -3,13 +3,14 @@ import Cardcomp from "../../molecules/TypographyBody";
 import IconTypography from "../../molecules/IconTypography";
 import IconHeader from "../../molecules/IconHeader";
 import styled from "@emotion/styled";
-const MainCard = styled.div`
+import { Box } from "@mui/material";
+const MainCard = styled(Box)`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  width: auto;
-  height: auto;
+  width: 285px;
+  height: 239px;
   gap: 20px;
   padding: 20px;
   position: fixed;

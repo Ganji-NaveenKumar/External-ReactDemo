@@ -2,7 +2,8 @@ import React from "react";
 import Icon from "../../atoms/Icon";
 import styled from "@emotion/styled";
 import { iconsData } from "../../../utils/constants/index";
-const IconCompStyle=styled.div`
+import { Box } from "@mui/material";
+const IconCompStyle=styled(Box)`
 display:flex;
 justify-content:space-between;
 width:144px;
